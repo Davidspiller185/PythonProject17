@@ -7,6 +7,7 @@ class Encryptor:
         """
         if not key:
             raise ValueError("המפתח לא יכול להיות ריק")
+        
 
         data = text.encode(encoding)
         key_bytes = key.encode(encoding)
@@ -19,3 +20,6 @@ class Encryptor:
         cipher_hex = cipher_bytes.hex()
         print(cipher_hex)  # הדפסה לפי הבקשה
         return cipher_hex
+
+
+
